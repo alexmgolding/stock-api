@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticker API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <div class="title">
+                <h1>Stock Indices Search</h1>
+            </div>
+        </div>
+    </header>
+    <div id="form-container">
+        <form>
+            <p>
+                <div class="search-container col-12">
+                    <label for="search">Enter a single stock symbol.</label>
+                    <input type="text" id="search" class="search" required>
+                    <input class="btn btn-outline-dark" type="submit" value="Submit">
+                </div>
+            <p>
+        </form>
+    </div>
+    <div class="container-results">
+        <div class="results">
+            <p>
+                <button type="submit" onclick="refreshPage()">Reset Inquiry</button>
+            </p>
+            <h6 class="table">Share Price: Company Name</h3>
+            <ul></ul>
+        </div>
+    </div>
+    <footer class="footer-style">Stock Indices API</footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
