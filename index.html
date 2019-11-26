@@ -14,28 +14,42 @@
     <header>
         <div class="title-container">
             <div class="title">
-                <h1>Stock Indices Search</h1>
+                <h1><marque>Stock Indices Search</marque></h1>
             </div>
         </div>
     </header>
-    <div id="form-container">
-        <form>
-            <p>
-                <div class="search-container col-12">
+    <div class="row">
+        <div id="instruction" class="col-lg-6">
+            <h2>Stock Indices Instruction</h2>
+            <br>
+            <p>Input stock ticker to view price from the last market close.</p>
+            <br>
+            <p>Select the icon below to view a list of publicly traded companies.</p>
+            <div class="stockQuery">
+                <a href="https://www.nyse.com/listings_directory/stock" target="blank">
+                <img id="stockIcon" src="images/stockIcon.png" alt>
+                </a>
+            </div>
+        </div>
+        <div id="instruction" class="col-lg-6">
+            <form>
+                <p>
                     <label for="search">Enter a single stock symbol.</label>
                     <input type="text" id="search" class="search" required>
                     <input class="btn btn-outline-dark" type="submit" value="Submit">
-                </div>
-            <p>
-        </form>
+                </p>
+        </div>
     </div>
     <div class="container-results">
-        <div class="results">
-            <p>
-                <button type="submit" onclick="refreshPage()">Reset Inquiry</button>
-            </p>
-            <h6 class="table">Share Price: Company Name</h3>
-            <ul></ul>
+        <div class="row">
+            <div class="results">
+                <p>
+                    <button type="submit" onclick="refreshPage()">Reset Inquiry</button>
+                </p>
+            </div>
+            <div class="img col-6">
+                <ul></ul>
+            </div>
         </div>
     </div>
     <footer class="footer-style">Stock Indices API</footer>

@@ -20,13 +20,38 @@ h1 {
     font-family: 'Cinzel', serif;
 }
 
+#instruction {
+    width: 50%;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cinzel', serif;;
+}
+
+.row {
+    background-color: #da2d2d;
+}
+
 h6 {
     margin: 10px;
+}
+
+#stockIcon {
+    width: 5em;
+    height: 5em;
+}
+
+img {
+    vertical-align: center;
+    padding: 20px;
 }
 
 p {
     font-family: 'Merriweather Sans', sans-serif;
     height: 15px;
+    padding: 20px;
 }
 
 .search-container {
@@ -39,6 +64,7 @@ p {
 
 .btn {
     align-items: center;
+    margin: auto;
 }
 
 ul {
@@ -46,17 +72,22 @@ ul {
 }
 
 #form-container {
-    background-color: #79AEC5;
+    background-color: #FEDCD3;
 }
 
-.container-results {
-    background-image: url('https://images.unsplash.com/photo-1459257831348-f0cdd359235f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+.img {
+    background-image: url('https://images.unsplash.com/photo-1459257831348-f0cdd359235f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
-    background-position: 30% 70%;
-    height: 400px;
+    height: 300px;
+    background-position: 45% 55%;
 }
 
 .footer-style {
-    background-color: #3F80A7;
+    background-color:#F3ac96;
     text-align: center;
+}
+
+.results {
+    margin: 0;
+    padding: 15px;
 }
